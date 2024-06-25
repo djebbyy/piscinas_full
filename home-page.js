@@ -124,30 +124,30 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //TEXTO DINAMICO PORTADA-TEXTO DINAMICO PORTADA-TEXTO DINAMICO PORTADA-TEXTO DINAMICO PORTADA
 
-document.addEventListener("DOMContentLoaded", function() {
-	const textContainer = document.querySelector(".portada-background h1");
-	const text = "Construcción de Piscinas";
-	const hiddenElement1 = document.querySelector(".portada-background p");
-    const hiddenElement2 = document.querySelector(".btn1");
+// document.addEventListener("DOMContentLoaded", function() {
+// 	const textContainer = document.querySelector(".portada-background h1");
+// 	const text = "Construcción de Piscinas";
+// 	const hiddenElement1 = document.querySelector(".portada-background p");
+//     const hiddenElement2 = document.querySelector(".btn1");
 
-	function typeWriter(text, i) {
-		if (i < text.length) {
-			textContainer.innerHTML += text.charAt(i);
-			i++;
-			setTimeout(function() {
-				typeWriter(text, i);
-			}, 40); // Puedes ajustar la velocidad de escritura aquí
-		} else{
-			// Se ha completado la animación de escritura
+// 	function typeWriter(text, i) {
+// 		if (i < text.length) {
+// 			textContainer.innerHTML += text.charAt(i);
+// 			i++;
+// 			setTimeout(function() {
+// 				typeWriter(text, i);
+// 			}, 40); // Puedes ajustar la velocidad de escritura aquí
+// 		} else{
+// 			// Se ha completado la animación de escritura
 
-			// Muestra los elementos ocultos
-			hiddenElement1.classList.add("show");
-            hiddenElement2.classList.add("show");
-		}
-	}
+// 			// Muestra los elementos ocultos
+// 			hiddenElement1.classList.add("show");
+//             hiddenElement2.classList.add("show");
+// 		}
+// 	}
 
-	typeWriter(text, 0);
-});
+// 	typeWriter(text, 0);
+// });
 
 
 // CAMBIO DE COLOR BOTONES ANIMACION

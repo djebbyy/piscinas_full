@@ -13,8 +13,8 @@
 }
 
 body {
-	font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	font-weight: 400;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	
 	background: #ffffff;
 	color: #1f2933;
 	overflow-x: hidden;
@@ -38,10 +38,10 @@ body {
 	}
 	.navbar-brand img{
 		position: absolute;
-		top: -100px;
-		left: -35px !important;
+		top: -93px;
+		left: -15px !important;
 		margin-top: 0px !important;
-		width: 130px !important;
+		width: 100px !important;
 		z-index: 10;
 	}
 	.links-barra-top{
@@ -67,9 +67,7 @@ body {
 	}
 }
 @media screen and (min-width: 767px) and (max-width: 1070px){
-	.container-fluid a img{
-		width: 270px !important;
-	}
+	
 }
 
 /*FIN NAV DINAMICO*/
@@ -92,7 +90,7 @@ body {
 	}
 	.color-bg-nav{
 		padding: 0px 0px;
-		margin-left: 10px !important;
+		
 	}
 	.nav-item .nav-navegacion{
 		border-left: none !important;
@@ -225,10 +223,10 @@ nav{
 	font-size: 1.7em !important;
 }
 .navbar-brand img{
-	width: 220px;
+	width: 180px;
 	float: left;
 	margin-top: 60px;
-	margin-left: 40px;
+	margin-left: 30px;
 }
 .nav-navegacion{
 	text-decoration: none;
@@ -420,8 +418,8 @@ nav{
    font-size: 1.2em;
    width: 650px;
    text-align:left;
-   opacity: 0;
-   transition: opacity 0.3s ease-in-out;
+   /* opacity: 0;
+   transition: opacity 0.3s ease-in-out; */
    margin-left: 40px;
 }
 .seccion_portada button{
@@ -431,14 +429,15 @@ nav{
  }
  .boton-portada-a{
 	color: white;
-	transition:0.1s ease-in-out;
+	/* transition:0.1s ease-in-out; */
  }
 .btn1{
     background-color: transparent;
     border: 2px solid #F2A516 !important;
-	opacity: 0;
+	color: #f2f2f2;
+	/* opacity: 0; */
     font-weight: 500;
-	transition:0.1s ease-in-out;
+	/* transition:0.1s ease-in-out; */
 	margin-left: 40px;
 	border-radius: 0 !important;
 }
@@ -450,9 +449,9 @@ nav{
 	border: 2px solid #38D0F2!important;
 	background-color: #38D0F2 !important;
 }
-.show{
+ .show{
     opacity: 1 !important;
-}
+} 
 
 /* @media screen and (min-width: 1380px){
 	.cont-portada{
@@ -558,6 +557,7 @@ nav{
 .contenedor_10{
 	margin-top: 3%;
 	padding: 80px 30px;
+	overflow-x: hidden;
 }
 .titulo_parrafo_1{
 	
@@ -624,7 +624,7 @@ nav{
 	background-size: 50vw;
 	background-repeat: no-repeat;
 }
-.grid-1 h2{
+.grid-1 h3{
 	font-size: 2.5rem;
 	font-weight: 700;
 }
@@ -654,7 +654,7 @@ nav{
 	width: 100%;
     padding: 30px;
 }
-.grid-2 h2{
+.grid-2 h3{
 	font-size: 2.5rem;
 	font-weight: 700;
 }
@@ -887,7 +887,6 @@ form{
 		flex-direction: column !important;
 		width: 100%;
 		overflow:hidden !important;
-        height: 1000px !important;
 	}
 	.footer-img-cont{
 
@@ -910,7 +909,7 @@ form{
 		margin-top: 20px !important;
 	}
 	.derechos_pie{
-		margin-top: 40px !important;
+		
 	}	
 	.cont-lista-footer h4{
 		font-size: 5vw !important;
@@ -939,26 +938,24 @@ footer{
 	overflow: hidden;
 	margin-top: 80px;
 }
-.cont-footer{
-	position: absolute;
-	width: 100%;
-	min-width: 1000px;
-	height: 100%;
-	background-image: linear-gradient(to right,#12283a , #0170B9);
-}
+
 .cont-elemetos-footer{
 	position: relative;
 	display: flex;
 	justify-content: start;
 	align-items: center;
 	width: 100%;
+	min-width: 1000px;
+	height: fit-content;
+	background-image: linear-gradient(to right,#12283a , #0170B9);
 }
 .cont-ul-footer{
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	display: flex;
+	justify-content:space-evenly;
+	align-items: center;
+	gap: 50px;
     width: 100%;
-	height: 600px;
-	margin-left: 10px;
+	height: 500px;
 }
 .footer-img-cont{
 	position: absolute;
@@ -996,7 +993,7 @@ footer{
 	margin-left: 0px;
 }
 .cont-lista-footer h4{
-	font-size: 2em;
+	font-size: 1.7em;
 }
 .cont-lista-footer li{
 	padding: 10px 0px;
@@ -1010,4 +1007,6 @@ footer{
 	align-items: center;
 	color: rgba(255, 255, 255, 0.75);
 	font-size: 0.75rem;
+	height: fit-content;
+	background-image: linear-gradient(to right,#12283a , #0170B9);
 }
