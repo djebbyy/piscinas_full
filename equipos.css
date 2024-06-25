@@ -758,7 +758,7 @@ nav{
 .seccion-beneficios{
 	height: fit-content;
 	margin-top: 28px;
-	border: 1px solid red;
+	
 }
 .titulos-beneficios{
 padding: 30px;
@@ -927,7 +927,6 @@ padding: 30px;
 .flex-seccion2{
 	display: flex;
 	padding: 30px;
-	border: 1px solid #ff0080;
 	height: 100vh;
 }
 .contenedor-revestimiento{
@@ -1043,7 +1042,6 @@ padding: 30px;
 }
 
 .seccion_formulario{
-    border: 1px solid blue;
 	height: fit-content;
 	width: 100%;
 	padding: 30px;
