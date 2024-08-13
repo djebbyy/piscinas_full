@@ -158,4 +158,5 @@ function cambiarEstilo() {
 	boton.style.color = "#12283a";
   }
 
+ 
 

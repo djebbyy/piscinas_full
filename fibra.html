@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/dom.png" type="image/x-icon">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -20,7 +21,7 @@
 <!-- AOS CSS -->
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,700;1,400;1,700|Montserrat:ital,wght@0,400;0,700;1,400;1,700|Raleway:ital,wght@0,400;0,700;1,400;1,700|Orbitron:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700|Fira+Sans+Condensed:ital,wght@0,400;1,400;1,700|Speedy2|Raceway|Nascar" />
-	<title>Fíbra|Piscinas Full</title>
+	<title>Fíbra|ValorPiscina</title>
     <!-- <link rel="icon" href="/img/" sizes="32x32" type="image/png"> -->
 </head>
 <body>
@@ -28,12 +29,12 @@
     <div class="barra-top" id="barra-top_id">
      <div class="links-barra-top"> 
          <ul class="ul-menu-top">
-         <li class="llamar-barra" style="color: white !important;">Llamar <i class="bi bi-chevron-down icon-rotate"></i>
-           <ul class="submenu">
-             <li><a href="tel:+56961626957" style="color:#130e33 !important;">Las condes: <br> +569 6162 6957</a></li>
-         </ul>
-         </li>
-         <a href=""><li>Formulario de contacto</li></a>
+         <!-- <li class="llamar-barra" style="color: white !important;">Llamar <i class="bi bi-chevron-down icon-rotate"></i>
+           <ul class="submenu"> -->
+             <li><a href="tel:+56961626957" style="color: white !important;">Rosario Norte, Las Condes: +569 6162 6957</a></li>
+         <!-- </ul>
+         </li> -->
+         <!-- <a href=""><li>Formulario de contacto</li></a> -->
         </ul>
      </div>
     </div>
@@ -125,12 +126,17 @@
         </div>
         
       </div>
-      <div class="telefonos-ubicacion-relative">
+      <!-- <div class="telefonos-ubicacion-relative">
         <div class="telefonos-ubicacion-absolute">
        <a href="ubicacion_y_contacto.html"><li class="llamar-barra-ubicacion animate__animated animate__fadeInUp">Cotizar</li></a>
       </div>
-      </div>  
+      </div>   -->
   </section>
+
+   <!-- Botón de WhatsApp -->
+   <a href="https://wa.me/+56932498429" class="whatsapp-button" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="animate__animated animate__fadeInRight" alt="WhatsApp" width="70px" style="position: fixed; right: 15px; bottom: 15px; z-index: 100;">
+   </a>
 
   <!-- SECCION BENEFICIOS - SECCION BENEFICIOS -->
   <section class="seccion-beneficios">
@@ -200,7 +206,7 @@
      <p>Escríbenos desde el botón de whatsapp o envíanos este formulario y recíbe atención.</p>    
     <div class="textos-formulario">
       
-        <form action="send_email.php" method="POST">
+        <form action="formulario.php" method="POST">
             <label for="name">Nombre</label>
             <input type="text" id="name" name="name" required>
 
@@ -211,11 +217,12 @@
             <input type="tel" id="phone" name="phone">
          
 
-            <label for="servicio">Tipo de servicio</label>
-            <select id="country" name="servicio">
-                <option value="hormigon">Hormigón</option>
-                <option value="fibra">Fibra de vídrio</option>
-                <option value="revestimiento">Revestimiento</option>
+            <label for="reason">Tipo de servicio</label>
+            <select id="country" name="reason">
+                <option value="piscina_hormigon">Piscina Hormigón</option>
+                <option value="piscina_fibra">Piscina Fibra de vídrio</option>
+                <option value="marble_dust"> Revestimiento Marble Dust</option>
+                <option value="diamond-brite">Revestimiento diamond-brite</option>
             </select>
 
             <label for="message">Mensaje</label>
@@ -235,330 +242,262 @@
     <h2>Galería de nuestro trabajo</h2>
     <p>Una galería de fotos de trabajos de construcción de piscinas muestra la calidad y diversidad de proyectos realizados. Incluye diseños personalizados, instalaciones modernas y acabados profesionales, destacando la atención al detalle y la satisfacción del cliente. Inspírate para tu propio proyecto.</p>
    
-    <!-- CARRUSEL 1 - CARRUSEL 1 -CARRUSEL 1 -CARRUSEL 1 -CARRUSEL 1 -  -->
-    <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
-      <div class="carousel-contenedor">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <!-- Tarjeta 1 -->
-                <div class="card card-custom">
-                  <div class="img-equipos-cont">
-                    <img src="./img/img_equipos/Equipo_7.png" class="card-img-top" alt="...">
-                  </div>
-                    <div class="card-body">
-                        <!-- <h3 class="card-title"style="font-size: 1.1rem;">Cámara Retinal TRC 50 DX, Topcon. <br> <br></h3> -->
-                        <!-- Button trigger modal 1 -->
-                        <button type="button" class="btn btn-primary bg-transparent text-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
-                           Ampliar
-                        </button>
+        <!-- CARRUSEL 1 - CARRUSEL 1 -CARRUSEL 1 -CARRUSEL 1 -CARRUSEL 1 -  -->
+        <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-contenedor">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- Tarjeta 1 -->
+                    <div class="card card-custom">
+                      <div class="img-equipos-cont">
+                        <img src="./img/img-trabajos/trabajo1.jpeg" class="card-img-top" alt="...">
+                      </div>
+                        <div class="card-body">
+                            <!-- <h3 class="card-title"style="font-size: 1.1rem;">Cámara Retinal TRC 50 DX, Topcon. <br> <br></h3> -->
+                            <!-- Button trigger modal 1 -->
+                            <button type="button" class="btn btn-primary bg-transparent text-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                               Ampliar
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Tarjeta 2 -->
+                    <div class="card card-custom">
+                      <div class="img-equipos-cont">
+                        <img src="./img/img-trabajos/trabajo2.jpeg" class="card-img-top" alt="...">
+                      </div>
+                        <div class="card-body">
+                            <!-- <h3 class="card-title"style="font-size: 1.1rem;">Cámara Retinal TRC 50 DX, Topcon. <br> <br></h3> -->
+                            <!-- Button trigger modal 2 -->
+                            <button type="button" class="btn btn-primary bg-transparent text-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                              Ampliar
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Tarjeta 3 -->
+                    <div class="card card-custom">
+                      <div class="img-equipos-cont">
+                        <img src="./img/img-trabajos/trabajo3.jpeg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <!-- <h3 class="card-title"style="font-size: 1.1rem;">Cámara Retinal TRC 50 DX, Topcon. <br> <br></h3> -->
+                            <!-- Button trigger modal 3 -->
+                            <button type="button" class="btn btn-primary bg-transparent text-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                              Ampliar
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Tarjeta 4 -->
+                    <div class="card card-custom">
+                      <div class="img-equipos-cont">
+                        <img src="./img/img-trabajos/trabajo4.jpeg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <!-- <h3 class="card-title"style="font-size: 1.1rem;">Cámara Retinal TRC 50 DX, Topcon. <br> <br></h3> -->
+                            <!-- Button trigger modal 4 -->
+                            <button type="button" class="btn btn-primary bg-transparent text-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                              Ampliar
+                            </button>
+                        </div>
+                    </div>
+                     <!-- Tarjeta 5 -->
+                    <div class="card card-custom">
+                      <div class="img-equipos-cont">
+                        <img src="./img/img-trabajos/trabajo5.jpeg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <!-- <h3 class="card-title"style="font-size: 1.1rem;">Cámara Retinal TRC 50 DX, Topcon. <br> <br></h3> -->
+                            <!-- Button trigger modal 5 -->
+                            <button type="button" class="btn btn-primary bg-transparent text-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                              Ampliar
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Tarjeta 6 -->
+                    <div class="card card-custom">
+                      <div class="img-equipos-cont">
+                        <img src="./img/img-trabajos/trabajo6.jpeg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <!-- <h3 class="card-title"style="font-size: 1.1rem;">Cámara Retinal TRC 50 DX, Topcon. <br> <br></h3> -->
+                            <!-- Button trigger modal 6 -->
+                            <button type="button" class="btn btn-primary bg-transparent text-primary" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                              Ampliar
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <!-- Tarjeta 2 -->
-                <div class="card card-custom">
-                  <div class="img-equipos-cont">
-                    <img src="./img/img_equipos/Equipo_2.png" class="card-img-top" alt="...">
-                  </div>
-                    <div class="card-body">
-                        <!-- <h3 class="card-title"style="font-size: 1.1rem;">Cámara Retinal TRC 50 DX, Topcon. <br> <br></h3> -->
-                        <!-- Button trigger modal 2 -->
-                        <button type="button" class="btn btn-primary bg-transparent text-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                          Ampliar
-                        </button>
+    
+                <!-- CARRUSEL 2 -->
+                <div class="carousel-item">
+                   
+                    <!-- Tarjeta 7 -->
+                    <div class="card card-custom">
+                      <div class="img-equipos-cont">
+                        <img src="./img/img-trabajos/trabajo7.jpeg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <!-- <h3 class="card-title"style="font-size: 1.1rem;">Cámara Retinal TRC 50 DX, Topcon. <br> <br></h3> -->
+                            <!-- Button trigger modal 7 -->
+                            <button type="button" class="btn btn-primary bg-transparent text-primary" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                              Ampliar
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <!-- Tarjeta 3 -->
-                <div class="card card-custom">
-                  <div class="img-equipos-cont">
-                    <img src="./img/img_equipos/Equipo_1.png" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <!-- <h3 class="card-title"style="font-size: 1.1rem;">Cámara Retinal TRC 50 DX, Topcon. <br> <br></h3> -->
-                        <!-- Button trigger modal 3 -->
-                        <button type="button" class="btn btn-primary bg-transparent text-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
-                          Ampliar
-                        </button>
-                    </div>
-                </div>
-                <!-- Tarjeta 4 -->
-                <div class="card card-custom">
-                  <div class="img-equipos-cont">
-                    <img src="./img/img_equipos/Equipo_3.png" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <!-- <h3 class="card-title"style="font-size: 1.1rem;">Cámara Retinal TRC 50 DX, Topcon. <br> <br></h3> -->
-                        <!-- Button trigger modal 4 -->
-                        <button type="button" class="btn btn-primary bg-transparent text-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
-                          Ampliar
-                        </button>
-                    </div>
-                </div>
-                 <!-- Tarjeta 5 -->
-                <div class="card card-custom">
-                  <div class="img-equipos-cont">
-                    <img src="./img/img_equipos/Equipo_4.png" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <!-- <h3 class="card-title"style="font-size: 1.1rem;">Cámara Retinal TRC 50 DX, Topcon. <br> <br></h3> -->
-                        <!-- Button trigger modal 5 -->
-                        <button type="button" class="btn btn-primary bg-transparent text-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5">
-                          Ampliar
-                        </button>
-                    </div>
-                </div>
-                <!-- Tarjeta 6 -->
-                <div class="card card-custom">
-                  <div class="img-equipos-cont">
-                    <img src="./img/img_equipos/Equipo_5.png" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <!-- <h3 class="card-title"style="font-size: 1.1rem;">Cámara Retinal TRC 50 DX, Topcon. <br> <br></h3> -->
-                        <!-- Button trigger modal 6 -->
-                        <button type="button" class="btn btn-primary bg-transparent text-primary" data-bs-toggle="modal" data-bs-target="#exampleModal6">
-                          Ampliar
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CARRUSEL 2 -->
-            <div class="carousel-item">
-               
-                <!-- Tarjeta 7 -->
-                <div class="card card-custom">
-                  <div class="img-equipos-cont">
-                    <img src="./img/img_equipos/Equipo_6.png" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <!-- <h3 class="card-title"style="font-size: 1.1rem;">Cámara Retinal TRC 50 DX, Topcon. <br> <br></h3> -->
-                        <!-- Button trigger modal 7 -->
-                        <button type="button" class="btn btn-primary bg-transparent text-primary" data-bs-toggle="modal" data-bs-target="#exampleModal7">
-                          Ampliar
-                        </button>
-                    </div>
-                </div>
-                <!-- Tarjeta 8 -->
-                <div class="card card-custom">
-                  <div class="img-equipos-cont">
-                    <img src="./img/img_equipos/Equipo_8.png" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <!-- <h3 class="card-title"style="font-size: 1.1rem;">Cámara Retinal TRC 50 DX, Topcon. <br> <br></h3> -->
-                        <!-- Button trigger modal 8 -->
-                        <button type="button" class="btn btn-primary bg-transparent text-primary" data-bs-toggle="modal" data-bs-target="#exampleModal8">
-                          Ampliar
-                        </button>
-                    </div>
-                </div>
-                <!-- Tarjeta 9 -->
-                <div class="card card-custom">
-                  <div class="img-equipos-cont">
-                    <img src="./img/img_equipos/Equipo_10.png" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                       <!-- <h3 class="card-title"style="font-size: 1.1rem;">Cámara Retinal TRC 50 DX, Topcon. <br> <br></h3> -->
-                        <!-- Button trigger modal 9 -->
-                        <button type="button" class="btn btn-primary bg-transparent text-primary" data-bs-toggle="modal" data-bs-target="#exampleModal9">
-                          Ampliar
-                        </button>
-                    </div>
-                </div>
-                 <!-- Tarjeta 10 -->
-                 <div class="card card-custom">
-                  <div class="img-equipos-cont">
-                    <img src="./img/img_equipos/Equipo_9.png" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <!-- <h3 class="card-title"style="font-size: 1.1rem;">Cámara Retinal TRC 50 DX, Topcon. <br> <br></h3> -->
-                        <!-- Button trigger modal 10 -->
-                        <button type="button" class="btn btn-primary bg-transparent text-primary" data-bs-toggle="modal" data-bs-target="#exampleModal10">
-                          Ampliar
-                        </button>
+                    <!-- Tarjeta 8 -->
+                    <div class="card card-custom">
+                      <div class="img-equipos-cont">
+                        <img src="./img/img-trabajos/trabajo8.jpeg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <!-- <h3 class="card-title"style="font-size: 1.1rem;">Cámara Retinal TRC 50 DX, Topcon. <br> <br></h3> -->
+                            <!-- Button trigger modal 8 -->
+                            <button type="button" class="btn btn-primary bg-transparent text-primary" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+                              Ampliar
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
+    
+          </div>
+            <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
         </div>
-
-      </div>
-        <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </a>
-    </div>
-
-  <!-- Modal 1 - Modal 1 - Modal 1 -->
-<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-custom modal-fullscreen">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title fs-5" id="exampleModalLabel">Cámara Retinal TRC 50 DX, Topcon.</h3>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <img src="./img/img_equipos/equipos_modal/modal-maquina-1.png" class="card-img-top" alt="...">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+    
+      <!-- Modal 1 - Modal 1 - Modal 1 -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-custom modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./img/img-trabajos/trabajo1.jpeg" class="card-img-top" alt="...">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<!-- Modal 2 - Modal 2 - Modal 2 -->
-<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-custom modal-fullscreen">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title fs-5" id="exampleModalLabel">Microscopio Confocal Confoscan 4, Nidek.</h3>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <img src="./img/img_equipos/equipos_modal/modal-maquina-2.png" class="card-img-top" alt="...">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Modal 3 - Modal 3 - Modal 3 -->
-<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-custom modal-fullscreen">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title fs-5" id="exampleModalLabel">Optos California</h3>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <img src="./img/img_equipos/equipos_modal/modal-maquina-3.png" class="card-img-top" alt="...">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+    <!-- Modal 2 - Modal 2 - Modal 2 -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-custom modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./img/img-trabajos/trabajo2.jpeg" class="card-img-top" alt="...">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<!-- Modal 4 - Modal 4 - Modal 4 -->
-<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-custom modal-fullscreen">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title fs-5" id="exampleModalLabel">Oct-A Avanti, Optovue.</h3>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <img src="./img/img_equipos/equipos_modal/modal-maquina-4.png" class="card-img-top" alt="...">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Modal 5 - Modal 5 - Modal 5 -->
-<div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-custom modal-fullscreen">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title fs-5" id="exampleModalLabel">Ecografo Ultrasónico Ultra Scan, Topcon. </h3>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <img src="./img/img_equipos/equipos_modal/modal-maquina-5.png" class="card-img-top" alt="...">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+    <!-- Modal 3 - Modal 3 - Modal 3 -->
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-custom modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./img/img-trabajos/trabajo3.jpeg" class="card-img-top" alt="...">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<!-- Modal 6 - Modal 6 - Modal 6 -->
-<div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-custom modal-fullscreen">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title fs-5" id="exampleModalLabel">Oct Cirrus 4000 HD, Zeiss.</h3>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <img src="./img/img_equipos/equipos_modal/modal-maquina-6.png" class="card-img-top" alt="...">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Modal 7 - Modal 7 - Modal 7 -->
-<div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-custom modal-fullscreen">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title fs-5" id="exampleModalLabel">Campimetro Visual Goldman</h3>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <img src="./img/img_equipos/equipos_modal/modal-maquina-7.png" class="card-img-top" alt="...">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+    <!-- Modal 4 - Modal 4 - Modal 4 -->
+    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-custom modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./img/img-trabajos/trabajo4.jpeg" class="card-img-top" alt="...">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<!-- Modal 8 - Modal 8 - Modal 8 -->
-<div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-custom modal-fullscreen">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title fs-5" id="exampleModalLabel">OTC Visante, Zeiss.</h3>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <img src="./img/img_equipos/equipos_modal/modal-maquina-8.png" class="card-img-top" alt="...">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Modal 9 - Modal 9 - Modal 9 -->
-<div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-custom modal-fullscreen">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title fs-5" id="exampleModalLabel">Topógrafo Corneal Pentacam HR, Oculus.</h3>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <img src="./img/img_equipos/equipos_modal/modal-maquina-9.png" class="card-img-top" alt="...">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+    <!-- Modal 5 - Modal 5 - Modal 5 -->
+    <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-custom modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./img/img-trabajos/trabajo5.jpeg" class="card-img-top" alt="...">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<!-- Modal 10 - Modal 10 - Modal 10 -->
-<div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-custom modal-fullscreen">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title fs-5" id="exampleModalLabel">Campímetro Visual Computarizado, Zeiss.</h3>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <img src="./img/img_equipos/equipos_modal/modal-maquina-10.png" class="card-img-top" alt="...">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+    <!-- Modal 6 - Modal 6 - Modal 6 -->
+    <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-custom modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./img/img-trabajos/trabajo6.jpeg" class="card-img-top" alt="...">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+    <!-- Modal 7 - Modal 7 - Modal 7 -->
+    <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-custom modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./img/img-trabajos/trabajo7.jpeg" class="card-img-top" alt="...">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 8 - Modal 8 - Modal 8 -->
+    <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-custom modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./img/img-trabajos/trabajo8.jpeg" class="card-img-top" alt="...">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 </section>
 
 </main>
@@ -589,7 +528,6 @@
     <ul id="footer-texts" class="cont-lista-footer mesa-central">
       <h4 style="color: white;">Te ayudamos<br><br><br></h4>
       <li><a href="tel:+56961626957">Cotizar<br>+56 9 6162 6957</a></li>
-      <li><a href="">Formulario de contacto</a></li>
     </ul>
 </div>
 </div>
